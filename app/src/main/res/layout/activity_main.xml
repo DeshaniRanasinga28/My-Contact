@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name_EdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/contact_name"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/phoneNum_EdTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name_EdTxt"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:hint="@string/contact_number"
+        android:layout_marginRight="20dp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/savet_Btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNum_EdTxt"
+        android:text="@string/contact_save"
+        android:layout_alignEnd="@id/phoneNum_EdTxt"
+        android:layout_alignRight="@id/phoneNum_EdTxt" />
+    
+    <Button
+        android:id="@+id/viewList_Btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNum_EdTxt"
+        android:layout_toLeftOf="@id/savet_Btn"
+        android:text="@string/contact_viewList"/>
+
+
+
+
+</RelativeLayout>
